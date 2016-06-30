@@ -24,30 +24,24 @@
 <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#Entry>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-        a       owl:DatatypeProperty .
-
-<http://vocab.linkeddata.es/ontology/report#Report>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1467299937739HTTPPURLORGNETWF-MOTIFS>
+<http://vocab.linkeddata.es/ontology/report#ENTRY1467300305170HTTPPURLORGNETP-PLAN>
         a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab http://purl.org/net/wf-motifs" ;
+        rdfs:label  "Entry for vocab http://purl.org/net/p-plan" ;
         <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                "http://purl.org/net/wf-motifs" ;
+                "http://purl.org/net/p-plan" ;
         <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1467299937739> ;
+                <http://vocab.linkeddata.es/ontology/report#REPORT1467300305170> ;
         <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
                 "http://vocab.linkeddata.es/ontology/report#success" .
 
-<http://vocab.linkeddata.es/ontology/report#REPORT1467299937739>
+<http://vocab.linkeddata.es/ontology/report#Entry>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1467300305170>
         a           <http://vocab.linkeddata.es/ontology/report#Report> ;
-        rdfs:label  "Report created on Thu Jun 30 17:18:57 CEST 2016" ;
+        rdfs:label  "Report created on Thu Jun 30 17:25:05 CEST 2016" ;
         <http://vocab.linkeddata.es/ontology/report#hasEntry>
-                <http://vocab.linkeddata.es/ontology/report#ENTRY1467299937739HTTPPURLORGNETWF-MOTIFS> ;
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1467300305170HTTPPURLORGNETP-PLAN> ;
         <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
                 "0" ;
         <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
@@ -55,6 +49,12 @@
         <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
                 "0" ;
         <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Thu Jun 30 17:18:57 CEST 2016"^^xsd:dateTime .
+                "Thu Jun 30 17:25:05 CEST 2016"^^xsd:dateTime .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
 
 rdfs:label  a   owl:DatatypeProperty .
