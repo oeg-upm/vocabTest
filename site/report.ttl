@@ -3,16 +3,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-        a       owl:DatatypeProperty .
-
 <http://vocab.linkeddata.es/ontology/report#entrySubject>
         a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#hasEntry>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1467625489908HTTPPURLORGNETP-PLAN>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab http://purl.org/net/p-plan" ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                "http://purl.org/net/p-plan" ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1467625489908> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+        a       owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
         a       rdf:Property .
 
-rdfs:label  a   owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#reportDate>
         a       owl:DatatypeProperty .
@@ -20,64 +34,27 @@ rdfs:label  a   owl:DatatypeProperty .
 <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1467625261249HTTPGEOLINKEDDATAESP-PLAN>
-        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab http://geo.linkeddata.es/p-plan" ;
-        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
-                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> , <http://vocab.linkeddata.es/ontology/report#NOSERIALIZATIONSAVAILABLE> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                "http://geo.linkeddata.es/p-plan" ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1467625261249> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#error" , "http://vocab.linkeddata.es/ontology/report#warning" .
-
-<http://vocab.linkeddata.es/ontology/report#Error>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#Report>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND>
-        a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
-        rdfs:label  "Warning: A license was not found for vocabulary" .
-
-<http://vocab.linkeddata.es/ontology/report#GENERICERROR>
-        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
-        rdfs:label  "Error: the vocabulary could not be loaded or processed" .
-
-<http://vocab.linkeddata.es/ontology/report#NOSERIALIZATIONSAVAILABLE>
-        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
-        rdfs:label  "Error: no serializations available for vocab" .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-        a       owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#REPORT1467625489908>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Mon Jul 04 11:44:49 CEST 2016" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1467625489908HTTPPURLORGNETP-PLAN> ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+                "1" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#reportDate>
+                "Mon Jul 04 11:44:49 CEST 2016"^^xsd:dateTime .
 
 <http://vocab.linkeddata.es/ontology/report#Entry>
         a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#Warning>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
         a       owl:DatatypeProperty .
 
-<http://vocab.linkeddata.es/ontology/report#hasEntry>
-        a       rdf:Property .
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#REPORT1467625261249>
-        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
-        rdfs:label  "Report created on Mon Jul 04 11:41:01 CEST 2016" ;
-        <http://vocab.linkeddata.es/ontology/report#hasEntry>
-                <http://vocab.linkeddata.es/ontology/report#ENTRY1467625261249HTTPGEOLINKEDDATAESP-PLAN> ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-                "1" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
-                "0" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-                "1" ;
-        <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Mon Jul 04 11:41:01 CEST 2016"^^xsd:dateTime .
-
-<http://vocab.linkeddata.es/ontology/report#detectedProblem>
-        a       rdf:Property .
+rdfs:label  a   owl:DatatypeProperty .
