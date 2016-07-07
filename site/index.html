@@ -106,10 +106,11 @@
 <td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
 <td><span class="label label-primary">plan</span>
 <span class="label label-primary"> workflow</span>
+<span class="label label-primary"> test</span>
 </td>
 <td>
 PROV extension for linking Plans and parts of plans to their respective executions.</td>
-<input type="hidden" name="inp1" id="inp1" value="The P-Plan ontology--plan-- workflow--"/></tr></tbody></table>
+<input type="hidden" name="inp1" id="inp1" value="The P-Plan ontology--plan-- workflow-- test--"/></tr></tbody></table>
 <hr>
       <footer class="footer">
             <div class="row">
@@ -132,7 +133,7 @@ PROV extension for linking Plans and parts of plans to their respective executio
 $(function() {
 var availableTags = [
 "The P-Plan ontology"
-, "plan", " workflow"];
+, "plan", " workflow", " test"];
 $( "#tags" ).autocomplete({
 source: availableTags,
 select: function(event, ui) {
