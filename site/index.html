@@ -96,21 +96,7 @@
 </tr>
 </thead>
 <tbody>
-<tr id="tr1">
-<td><a href = "http://purl.org/net/p-plan" target="_blank">The P-Plan ontology</a> <a href = "ontologies/purl.orgnetp-plan.html" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this vocabulary"/></a></td>
-<td>
-<span class="label label-primary">rdf+xml</span>
-<span class="label label-primary">html</span>
-</td>
-<td><a href="http://purl.org/NET/rdflicense/cc-by-nc-sa2.0" target="_blank"> <span class="label label-success">CC-BY-NC-SA</span> </a></td>
-<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
-<td><span class="label label-primary">plan</span>
-<span class="label label-primary"> workflow</span>
-<span class="label label-primary"> test</span>
-</td>
-<td>
-PROV extension for linking Plans and parts of plans to their respective executions.</td>
-<input type="hidden" name="inp1" id="inp1" value="The P-Plan ontology--plan-- workflow-- test--"/></tr></tbody></table>
+</tbody></table>
 <hr>
       <footer class="footer">
             <div class="row">
@@ -132,8 +118,7 @@ PROV extension for linking Plans and parts of plans to their respective executio
 <script>
 $(function() {
 var availableTags = [
-"The P-Plan ontology"
-, "plan", " workflow", " test"];
+];
 $( "#tags" ).autocomplete({
 source: availableTags,
 select: function(event, ui) {
