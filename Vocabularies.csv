@@ -1,4 +1,3 @@
 VocabURI;domain
-https://w3id.org/def/saref4envi#; environment, light pollution, SAREF
-https://w3id.org/def/saref4bldg#; building, IFC, building device, device, SAREF
-
+https://w3id.org/def/saref4envi#; environment, light pollution, photometer, SAREF
+https://w3id.org/def/saref4bldg#; building, building device, device, IFC, SAREF
