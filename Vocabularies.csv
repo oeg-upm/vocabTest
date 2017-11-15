@@ -1,5 +1,5 @@
 VocabURI;domain
-https://w3id.org/saref; smart appliances
-https://w3id.org/def/saref4envi#; environment, light pollution, photometer, SAREF
-https://w3id.org/def/saref4bldg#; building, building device, device, IFC, SAREF
+https://w3id.org/saref;smart appliances,IoT
+https://w3id.org/def/saref4envi#;environment,light pollution,photometer,SAREF
+https://w3id.org/def/saref4bldg#;building,building device,device,IFC,SAREF
 
