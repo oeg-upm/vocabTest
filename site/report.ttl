@@ -3,8 +3,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4ENVI%2523>
-        rdfs:label  "Entry for vocab https://w3id.org/def/saref4envi#" .
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGSAREF>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab https://w3id.org/saref" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#LANGUAGENOTFOUND> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_SAREF> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1510821639859> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#success" , "http://vocab.linkeddata.es/ontology/report#warning" .
 
 <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
         a       owl:DatatypeProperty .
@@ -16,11 +25,22 @@
         a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
         rdfs:label  "Warning: A language was not recognized in vocabulary" .
 
-<http://vocab.linkeddata.es/ontology/report#REPORT1510818457275>
+<http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+        a       rdf:Property .
+
+rdfs:label  a   owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#reportDate>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1510821639859>
         a           <http://vocab.linkeddata.es/ontology/report#Report> ;
-        rdfs:label  "Report created on Thu Nov 16 08:47:37 CET 2017" ;
+        rdfs:label  "Report created on Thu Nov 16 09:40:39 CET 2017" ;
         <http://vocab.linkeddata.es/ontology/report#hasEntry>
-                <http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4BLDG%23> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGSAREF> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGSAREF4ENER> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4ENVI%23> ;
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGSAREF> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4ENVI%23> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGSAREF4ENER> , <http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4BLDG%23> ;
         <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
                 "1" ;
         <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
@@ -28,62 +48,27 @@
         <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
                 "4" ;
         <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Thu Nov 16 08:47:37 CET 2017"^^xsd:dateTime .
+                "Thu Nov 16 09:40:39 CET 2017"^^xsd:dateTime .
 
-<http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-        a       rdf:Property .
+<http://vocab.linkeddata.es/ontology/report#Error>
+        a       owl:Class .
 
-rdfs:label  a   owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4ENVI%2523>
+        rdfs:label  "Entry for vocab https://w3id.org/def/saref4envi#" .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGSAREF>
-        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab https://w3id.org/saref" ;
-        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
-                <http://vocab.linkeddata.es/ontology/report#LANGUAGENOTFOUND> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_SAREF> ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1510818457275> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#success" , "http://vocab.linkeddata.es/ontology/report#warning" .
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-        a       rdf:Property .
-
-<http://vocab.linkeddata.es/ontology/report#reportDate>
-        a       owl:DatatypeProperty .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4BLDG%23>
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4BLDG%23>
         a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
         <http://vocab.linkeddata.es/ontology/report#detectedProblem>
                 <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
         <http://vocab.linkeddata.es/ontology/report#entrySubject>
                 <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_DEF_SAREF4BLDG%23> ;
         <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1510818457275> ;
+                <http://vocab.linkeddata.es/ontology/report#REPORT1510821639859> ;
         <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
                 "http://vocab.linkeddata.es/ontology/report#success" , "http://vocab.linkeddata.es/ontology/report#warning" .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4BLDG%2523>
-        rdfs:label  "Entry for vocab https://w3id.org/def/saref4bldg#" .
-
-<http://vocab.linkeddata.es/ontology/report#Error>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGSAREF4ENER>
-        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        rdfs:label  "Entry for vocab https://w3id.org/saref4ener" ;
-        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
-                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_SAREF4ENER> ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1510818457275> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#error" , "http://vocab.linkeddata.es/ontology/report#warning" .
-
-<http://vocab.linkeddata.es/ontology/report#Report>
-        a       owl:Class .
 
 <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND>
         a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
@@ -93,14 +78,17 @@ rdfs:label  a   owl:DatatypeProperty .
         a           <http://vocab.linkeddata.es/ontology/report#Error> ;
         rdfs:label  "Error: the vocabulary could not be loaded or processed" .
 
-<http://vocab.linkeddata.es/ontology/report#ENTRY1510818457275HTTPSW3IDORGDEFSAREF4ENVI%23>
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4BLDG%2523>
+        rdfs:label  "Entry for vocab https://w3id.org/def/saref4bldg#" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGDEFSAREF4ENVI%23>
         a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
         <http://vocab.linkeddata.es/ontology/report#detectedProblem>
                 <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
         <http://vocab.linkeddata.es/ontology/report#entrySubject>
                 <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_DEF_SAREF4ENVI%23> ;
         <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1510818457275> ;
+                <http://vocab.linkeddata.es/ontology/report#REPORT1510821639859> ;
         <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
                 "http://vocab.linkeddata.es/ontology/report#success" , "http://vocab.linkeddata.es/ontology/report#warning" .
 
@@ -112,6 +100,18 @@ rdfs:label  a   owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#Warning>
         a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1510821639859HTTPSW3IDORGSAREF4ENER>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab https://w3id.org/saref4ener" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_SAREF4ENER> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1510821639859> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" , "http://vocab.linkeddata.es/ontology/report#warning" .
 
 <http://vocab.linkeddata.es/ontology/report#Entry>
         a       owl:Class .
