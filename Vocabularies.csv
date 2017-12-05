@@ -1,5 +1,2 @@
 VocabURI;domain
-https://w3id.org/saref;smart appliances,IoT
-https://w3id.org/def/saref4envi#;environment,light pollution,photometer,SAREF extension
-https://w3id.org/def/saref4bldg#;building,building device,device,IFC,SAREF extension
-https://w3id.org/saref4ener;energy,demand response,SAREF extension
+https://w3id.org/fr/def/core#;scientific contributions, scientifi reviews, peer review, open science
