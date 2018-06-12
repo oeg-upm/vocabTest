@@ -1,2 +1,6 @@
 VocabURI;domain
-https://w3id.org/fr/def/core#;scientific contributions,scientific reviews,peer review,open science
+http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#;cultura, ocio
+http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#;turismo
+http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#;hacienda
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#;sector publico
+http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#;sector publico
