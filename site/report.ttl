@@ -3,16 +3,46 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+<http://vocab.linkeddata.es/ontology/report#hasEntry>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1528809103798HTTPVOCABLINKEDDATAESDATOSABIERTOSDEFTURISMOLUGAR%23>
+        a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                "http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#" ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1528809103798> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC>
+        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
+        rdfs:label  "Error: title or description missing from vocabulary" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
         a       owl:DatatypeProperty .
 
-<http://vocab.linkeddata.es/ontology/report#entrySubject>
-        a       rdf:Property .
+<http://vocab.linkeddata.es/ontology/report#REPORT1528809103798>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Tue Jun 12 15:11:43 CEST 2018" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1528809103798HTTPVOCABLINKEDDATAESDATOSABIERTOSDEFTURISMOLUGAR%23> ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+                "1" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#reportDate>
+                "Tue Jun 12 15:11:43 CEST 2018"^^xsd:dateTime .
 
 <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
         a       rdf:Property .
 
-rdfs:label  a   owl:DatatypeProperty .
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#reportDate>
         a       owl:DatatypeProperty .
@@ -20,62 +50,25 @@ rdfs:label  a   owl:DatatypeProperty .
 <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
         a       rdf:Property .
 
+<http://vocab.linkeddata.es/ontology/report#detectedProblem>
+        a       rdf:Property .
+
 <http://vocab.linkeddata.es/ontology/report#Error>
         a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#Report>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND>
-        a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
-        rdfs:label  "Warning: A license was not found for vocabulary" .
-
-<http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC>
-        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
-        rdfs:label  "Error: title or description missing from vocabulary" .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1512485390718HTTPSW3IDORGFRDEFCORE%23>
-        a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
-        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
-                <http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
-        <http://vocab.linkeddata.es/ontology/report#entrySubject>
-                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_FR_DEF_CORE%23> ;
-        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
-                <http://vocab.linkeddata.es/ontology/report#REPORT1512485390718> ;
-        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
-                "http://vocab.linkeddata.es/ontology/report#error" , "http://vocab.linkeddata.es/ontology/report#warning" .
-
-<http://vocab.linkeddata.es/ontology/report#ENTRY1512485390718HTTPSW3IDORGFRDEFCORE%2523>
-        rdfs:label  "Entry for vocab https://w3id.org/fr/def/core#" .
-
-<http://vocab.linkeddata.es/ontology/report#REPORT1512485390718>
-        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
-        rdfs:label  "Report created on Tue Dec 05 15:49:50 CET 2017" ;
-        <http://vocab.linkeddata.es/ontology/report#hasEntry>
-                <http://vocab.linkeddata.es/ontology/report#ENTRY1512485390718HTTPSW3IDORGFRDEFCORE%23> ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-                "1" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
-                "0" ;
-        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
-                "1" ;
-        <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Tue Dec 05 15:49:50 CET 2017"^^xsd:dateTime .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-        a       owl:DatatypeProperty .
 
 <http://vocab.linkeddata.es/ontology/report#Entry>
         a       owl:Class .
 
-<http://vocab.linkeddata.es/ontology/report#Warning>
-        a       owl:Class .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
         a       owl:DatatypeProperty .
 
-<http://vocab.linkeddata.es/ontology/report#hasEntry>
+<http://vocab.linkeddata.es/ontology/report#ENTRY1528809103798HTTPVOCABLINKEDDATAESDATOSABIERTOSDEFTURISMOLUGAR%2523>
+        rdfs:label  "Entry for vocab http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#" .
+
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#entrySubject>
         a       rdf:Property .
 
-<http://vocab.linkeddata.es/ontology/report#detectedProblem>
-        a       rdf:Property .
+rdfs:label  a   owl:DatatypeProperty .
