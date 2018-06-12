@@ -96,7 +96,22 @@
 </tr>
 </thead>
 <tbody>
-</tbody></table>
+<tr id="tr1">
+<td><a href = "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#" target="_blank">Otalex ontology</a> <a href = "ontologies/vocab.linkeddata.esdatosabiertosdefmedio-ambienteotalex.html" target="_blank"><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="bottom" title="More information about this vocabulary"/></a></td>
+<td>
+<span class="label label-primary">rdf+xml</span>
+<span class="label label-primary">html</span>
+</td>
+<td><a href="http://purl.org/NET/rdflicense/cc-by-nc-sa2.0" target="_blank"> <span class="label label-success">CC-BY-NC-SA</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/spa" target="_blank"> <span class="label label-primary">es</span></a> <a href="http://lexvo.org/id/iso639-3/por" target="_blank"> <span class="label label-primary">pt</span></a> <a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td><span class="label label-primary">otalex</span>
+<span class="label label-primary">alentejo</span>
+<span class="label label-primary">geology</span>
+<span class="label label-primary">hidrology</span>
+</td>
+<td>
+Geonames extension for encoding the terms of the Otalex project</td>
+<input type="hidden" name="inp1" id="inp1" value="Otalex ontology--otalex--alentejo--geology--hidrology--"/></tr></tbody></table>
 <hr>
       <footer class="footer">
             <div class="row">
@@ -106,7 +121,7 @@
     	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
     	Icons from <a target="_blank" href="http://glyphicons.com/">Glyphicons</a>
  	        <br>
-	        Latest revision December, 2017
+	        Latest revision June, 2018
            <br><p>&copy; Ontology Engineering Group</p>
         </div>
     	<div class="col-md-2">
@@ -118,7 +133,8 @@
 <script>
 $(function() {
 var availableTags = [
-];
+"Otalex ontology"
+, "otalex", "alentejo", "geology", "hidrology"];
 $( "#tags" ).autocomplete({
 source: availableTags,
 select: function(event, ui) {
