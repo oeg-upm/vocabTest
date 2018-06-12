@@ -1,6 +1,2 @@
 VocabURI;domain
-http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda;cultura, ocio
-http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar;turismo
-http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto;hacienda
-http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion;sector publico
-http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio;sector publico
+http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/otalex#;otalex,alentejo,geology,hidrology
