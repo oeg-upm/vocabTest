@@ -30,9 +30,15 @@ rdfs:label  a   owl:DatatypeProperty .
         a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
         rdfs:label  "Warning: A license was not found for vocabulary" .
 
-<http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC>
+<http://vocab.linkeddata.es/ontology/report#GENERICERROR>
         a           <http://vocab.linkeddata.es/ontology/report#Error> ;
-        rdfs:label  "Error: title or description missing from vocabulary" .
+        rdfs:label  "Error: the vocabulary could not be loaded or processed" .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1573832172807>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Fri Nov 15 16:36:12 CET 2019" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1573832172807HTTPSW3IDORGDEFSAREF4CITY> ;
 
 <http://vocab.linkeddata.es/ontology/report#ENTRY1512485390718HTTPSW3IDORGFRDEFCORE%23>
         a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
@@ -60,16 +66,32 @@ rdfs:label  a   owl:DatatypeProperty .
         <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
                 "1" ;
         <http://vocab.linkeddata.es/ontology/report#reportDate>
-                "Tue Dec 05 15:49:50 CET 2017"^^xsd:dateTime .
-
-<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
-        a       owl:DatatypeProperty .
+                "Fri Nov 15 16:36:12 CET 2019"^^xsd:dateTime .
 
 <http://vocab.linkeddata.es/ontology/report#Entry>
         a       owl:Class .
 
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
+
 <http://vocab.linkeddata.es/ontology/report#Warning>
         a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1573832172807HTTPSW3IDORGDEFSAREF4CITY>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab https://w3id.org/def/saref4city" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#https:/_W3ID.ORG_DEF_SAREF4CITY> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1573832172807> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" , "http://vocab.linkeddata.es/ontology/report#warning" .
+<http://vocab.linkeddata.es/ontology/report#Entry>
+        a       owl:Class .
+
 
 <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
         a       owl:DatatypeProperty .
